@@ -1,0 +1,14 @@
+// 1. ADD RANDOM TWO COLORS TO YPUR TABLE 'color'
+// 2. CREATE FOR LOOP TO SHOW GIVEN TEXT AND A COLOR FROM TABLE. LOG FIRST CHARACTER IN COLOR NAME AS CAPITAL LETTER.
+
+
+const color = ['blue']
+
+color.unshift('red')
+color.push('lime')
+
+console.log(color);
+
+for (let i = 0; i < color.length; i++){
+	console.log(`Mój ulubiony kolor to ${color[i].charAt(0).toUpperCase() + color[i].slice(1)}`);
+}
