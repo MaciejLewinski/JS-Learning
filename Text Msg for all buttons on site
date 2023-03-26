@@ -1,0 +1,7 @@
+const btns = document.querySelectorAll('button')
+
+function btnMsg(e){
+	console.log(`Kliknięto ${e.target.textComment}!`);
+}
+
+btns.forEach(btn => btn.addEventListener('click', btnMsg))
