@@ -1,0 +1,20 @@
+// Jeżeli mamy zwykłą funkcję to nasz THIS jest wiązany z tym co jest po lewej stronie kropki (ob.showNUmber, czyli z ob.)
+// W przypadku funkcji strzałkowej, to tak nie działa i trzeba opakować funkcję strzałkową wewnątrz zwykłej funkcji. 
+
+-----------------------------------------------------------
+
+const ob = {
+    number: 123,
+    showNUmber(){
+        console.log(this.number);
+    },
+    showNUmber2(){
+        const test = () => {
+            console.log(this.number);
+        }
+        test()
+    }
+}
+
+ob.showNUmber()
+ob.showNUmber2()
